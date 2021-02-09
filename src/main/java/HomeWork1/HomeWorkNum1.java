@@ -20,7 +20,7 @@ public class HomeWorkNum1 {
         positiveOrNegative(4); // #5
         System.out.println(positiveOrNegative2(-10)); // # 6
         whatIsName("Давид"); // #7
-        whatYear(1840); // #8
+        whatYear(1500); // #8
     }
 
     public static float foo(float a, float b, float c, float d) { //# 3
@@ -59,10 +59,14 @@ public class HomeWorkNum1 {
 
 
     public static void whatYear(int x) { //#8
-            if ((x % 400) % 4 == 0) {
+            if (x % 400 == 0) {
                 System.out.println("Год високосный!");
-            } else {
+            } else if(x % 100 == 0) {
                 System.out.println("Год не високосный");
             }
+            else if (x % 4 ==0) {
+                System.out.println("Год високосный!");
+            }
+            else System.out.println("Год не високосный");
     }
 }
