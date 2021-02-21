@@ -30,10 +30,9 @@ public class HomeWorkNum2 {
         {
             for (int i = 0; i < arr3.length; i++) {
                 if (arr3[i] < 6) {
-                    int j;
-                    j = arr3[i] * 2;
-                    System.out.println(j);
+                    arr3[i] = arr3[i] * 2;
                 }
+                System.out.print(arr3[i] + " ");
             }
         }
         System.out.println(" \n ");
@@ -67,7 +66,7 @@ public class HomeWorkNum2 {
         }
         int [] proverka = {1,2,1,4,3,1,2,1};
         System.out.println("\n" + chekB(proverka));
-        System.out.println(shiftArr(proverka, 5));
+
     }
 
     //#6 - переписал с сегодняшнего вебинара
