@@ -16,6 +16,7 @@ public class HomeWork3 {
                     System.out.println("Ваши попытки закончились, вы проиграли. Начать заново? \n 1 - Да \n 0 - Нет");
                     int o = sc.nextInt();
                     if (o == 0) {
+                        sc.close();
                         return;
                     } else {
                         i = 4;
@@ -29,6 +30,7 @@ public class HomeWork3 {
                     System.out.println("Вы угадали! Хотите сыграть еще? \n 1 - Да \n 0 - Нет");
                     int o = sc.nextInt();
                     if (o == 0) {
+                        sc.close();
                         return;
                     } else {
                         i = 4;
